@@ -59,6 +59,6 @@ def extract_deals_table(file_path):
     return df
 
 
-file_path = r"C:\Users\Arthur G\Desktop\ReportTester-51344621.html"
+file_path = r"C:\Users\Admin\Desktop\ReportTester.html"
 deals_df = extract_deals_table(file_path)
 print(deals_df)
