@@ -28,7 +28,7 @@ def extract_deals_table(file_path):
 
     rows = []
     all_rows = deals_tr.find_all_next("tr")[1:]
-    for row in tqdm(all_rows, desc="Extracting rows"):  # Usa tqdm aquí
+    for row in tqdm(all_rows, desc="Extracting rows"):
         cols = [ele.text.strip() for ele in row.find_all("td")]
         if not all(col in [None, "", "-"] for col in cols):
             rows.append(cols)
